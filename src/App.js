@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import ComponentWithUseState from './components/ComponentWithUseState';
+import ComponentWithUseEffect from './components/ComponentWithUseEffect';
 
 function App() {
 	return (
 		<div className='App'>
-			<ComponentWithUseState />
+			<ComponentWithUseEffect />
 		</div>
 	);
 }
