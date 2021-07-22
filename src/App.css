@@ -37,6 +37,8 @@
 	}
 }
 
+/* UseEffect Styles */
+
 .box-container {
 	display: flex;
 	justify-content: center;
@@ -63,3 +65,5 @@
 	height: 150px;
 	margin-top: 10px;
 }
+
+/* UseEffect Styles */
