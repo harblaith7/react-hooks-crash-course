@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, {
+	useState,
+	createContext,
+} from 'react';
 import Component1 from './components/Component1';
 
-export default function Parent() {
-	const [data, setData] = useState(
-		'Please Subscribe'
-	);
+export const CountContext = createContext(0);
+
+export default function App() {
+	const [count, setCount] = useState(0);
 
 	return (
-		<div>
+		<CountContext.Provider value={count}>
 			<Component1 />
-		</div>
+			<button onClick={() => setCount(count + 1)}>
+				Add
+			</button>
+		</CountContext.Provider>
 	);
 }
