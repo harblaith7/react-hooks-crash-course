@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Parent from './components/ComponentsWithUseContext/Parent';
+import ComponentWithUseReducer from './components/ComponentWithUseReducer';
 
 function App() {
 	return (
 		<div className='App'>
-			<Parent />
+			<ComponentWithUseReducer />
 		</div>
 	);
 }
